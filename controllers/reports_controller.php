@@ -1,6 +1,7 @@
 <?php
 /*
-Copyright (c) 2012 Luis E. S. Dias - www.smartbyte.com.br
+The MIT License
+Copyright (c) 2013 Luis E. S. Dias - smartbyte.systems@gmail.com
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
@@ -21,9 +22,6 @@ LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
-//App::uses('AppController', 'Controller');
-//App::uses('Folder', 'Utility');
-//App::uses('File', 'Utility');
 
 class ReportsController extends AppController {
     public $name = 'Reports';

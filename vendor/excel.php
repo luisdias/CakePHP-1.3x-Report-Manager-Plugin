@@ -1,6 +1,7 @@
 <?php
 /*
-Copyright (c) 2012 Luis E. S. Dias - www.smartbyte.com.br
+The MIT License
+Copyright (c) 2013 Luis E. S. Dias - smartbyte.systems@gmail.com
 
 based on an article from AppServ Open Project
 http://www.appservnetwork.com/modules.php?name=News&file=article&sid=8

@@ -1,6 +1,7 @@
 <?php
 /*
-Copyright (c) 2012 Luis E. S. Dias - www.smartbyte.com.br
+The MIT License
+Copyright (c) 2013 Luis E. S. Dias - smartbyte.systems@gmail.com
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
