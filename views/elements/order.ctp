@@ -4,9 +4,9 @@
         <table class="reportManagerOrderSelector" cellpadding="0" cellspacing="0">
             <thead>
                 <tr>
-                    <td><?php echo __('Field'); ?></td>
-                    <td class="reportManagerFieldOrder1"><?php echo __('Order 1'); ?></td>
-                    <td class="reportManagerFieldOrder2"><?php echo __('Order 2'); ?></td>                    
+                    <td><?php echo __d('report_manager','Field'); ?></td>
+                    <td class="reportManagerFieldOrder1"><?php echo __d('report_manager','Order 1'); ?></td>
+                    <td class="reportManagerFieldOrder2"><?php echo __d('report_manager','Order 2'); ?></td>                    
                 </tr>
             </thead>
 	<?php

@@ -23,9 +23,9 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 echo $this->Form->input('saved_report_option',array(
     'type'=>'select',
-    'label'=>__('Saved reports',true),
+    'label'=>__d('report_manager','Saved reports',true),
     'options'=>$files,
-    'empty'=>__('--Select--',true),
+    'empty'=>__d('report_manager','--Select--',true),
     'id'=>'saved_report_option',
     'name'=>'data[saved_report_option]'
     ));

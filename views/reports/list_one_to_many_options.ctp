@@ -23,8 +23,8 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 echo $this->Form->input('one_to_many_option',array(
     'type'=>'select',    
-    'label'=>__('One to many option',true),
+    'label'=>__d('report_manager','One to many option',true),
     'options'=>$associatedModels,
-    'empty'=>__('--Select--',true)
+    'empty'=>__d('report_manager','--Select--',true)
     ));
 ?>

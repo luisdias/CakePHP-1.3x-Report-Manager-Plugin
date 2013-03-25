@@ -5,10 +5,10 @@
             <thead>
                 <tr>
                     
-                    <td><?php echo __('Field'); ?></td>
-                    <td class="reportManagerFilterNot"><?php echo __('Not'); ?></td>
-                    <td class="reportManagerFilterCriteria"><?php echo __('Criteria'); ?></td>
-                    <td class="reportManagerFilterExample"><?php echo __('Example'); ?></td>
+                    <td><?php echo __d('report_manager','Field'); ?></td>
+                    <td class="reportManagerFilterNot"><?php echo __d('report_manager','Not'); ?></td>
+                    <td class="reportManagerFilterCriteria"><?php echo __d('report_manager','Criteria'); ?></td>
+                    <td class="reportManagerFilterExample"><?php echo __d('report_manager','Example'); ?></td>
                 </tr>
             </thead>
 	<?php

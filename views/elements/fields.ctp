@@ -4,9 +4,9 @@
         <table class="reportManagerFieldSelector" cellpadding="0" cellspacing="0">
             <thead>
                 <tr>
-                    <td class="reportManagerFieldAdd"><?php echo __('Add'); ?></td>
-                    <td><?php echo __('Field'); ?></td>
-                    <td class="reportManagerFieldPosition"><?php echo __('Position'); ?></td>
+                    <td class="reportManagerFieldAdd"><?php echo __d('report_manager','Add',true); ?></td>
+                    <td><?php echo __d('report_manager','Field',true); ?></td>
+                    <td class="reportManagerFieldPosition"><?php echo __d('report_manager','Position',true); ?></td>
                 </tr>
             </thead>
 	<?php
