@@ -163,6 +163,6 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
             <?php } ; ?>
             <?php endforeach; ?>
         
-        <div class="timestamp"><?php echo _('Report Created') . ' : ' . date('Y-m-d H:i:s'); ?></div>
+        <div class="timestamp"><?php echo __d('report_manager','Report Created',true) . ' : ' . date('Y-m-d H:i:s'); ?></div>
     <?php endif; ?>
 </div>
