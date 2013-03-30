@@ -10,7 +10,8 @@
             echo $this->Form->checkbox($modelClass.'.'.$field.'.'.'Add',array('hiddenField' => true,'checked'=>$modelFieldAdd));
             echo '</td>';
             echo '<td>';
-            echo '<b><span class="checkAll">'.$modelClass.'</span></b>.'.$field;
+            echo '<b><span class="checkAll">'.$modelClass.'</span></b>.';
+            echo ( isset($labelFieldList[$modelClass][$field]) ? $labelFieldList[$modelClass][$field] : ( isset($labelFieldList['*'][$field]) ? $labelFieldList['*'][$field] : $field ));
             echo '</td>';
             echo '<td>';
             echo $this->Form->input($modelClass.'.'.$field.'.'.'Position',array('type'=>'text','label'=>'','size'=>'4','maxlength'=>'4','class'=>'position'));

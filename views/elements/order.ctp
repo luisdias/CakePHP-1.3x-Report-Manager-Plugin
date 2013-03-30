@@ -13,7 +13,7 @@
 	foreach ($modelSchema as $field => $attributes): 
             echo '<tr>';
             echo '<td>';
-            echo $field;
+            echo ( isset($labelFieldList[$modelClass][$field]) ? $labelFieldList[$modelClass][$field] : ( isset($labelFieldList['*'][$field]) ? $labelFieldList['*'][$field] : $field ));            
             echo '</td>';
             echo '<td>';
             echo $this->Form->input($modelClass.'.'.$field.'.'.'OrderBy1',

@@ -224,6 +224,9 @@ class ReportsController extends AppController {
             }             
         }
         
+        $labelFieldList = Configure::read('ReportManager.labelFieldList');
+        $this->set('labelFieldList',$labelFieldList);
+        
         if (empty($this->data)) {        
             $displayForeignKeys = Configure::read('ReportManager.displayForeignKeys');
             $globalFieldIgnoreList = Configure::read('ReportManager.globalFieldIgnoreList');
@@ -231,6 +234,7 @@ class ReportsController extends AppController {
 
             $this->loadModel($modelClass);
             $modelSchema = $this->{$modelClass}->schema();
+            
             if (isset($globalFieldIgnoreList) && is_array($globalFieldIgnoreList)) {
                 foreach ($globalFieldIgnoreList as $field) {
                     unset($modelSchema[$field]);
@@ -286,7 +290,6 @@ class ReportsController extends AppController {
                 $this->loadReport($fileName);
 
         } else {
-            //print_r($this->data); die();
             $this->loadModel($modelClass);
             $associatedModels = $this->{$modelClass}->getAssociated();
             $oneToManyOption = $this->data[$modelClass]['OneToManyOption'];
