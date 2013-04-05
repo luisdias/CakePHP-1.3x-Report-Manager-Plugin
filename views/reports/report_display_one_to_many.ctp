@@ -155,7 +155,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
                      <?php } ?>
                      <?php if ( $showRecordCounter ) { ?>
                         <tr class="footer">
-                            <td colspan="<?php echo $oneToManyColumns; ?>"><i>Count:</i> <?php echo $counter;?></td>
+                            <td colspan="<?php echo $oneToManyColumns; ?>"><i><?php echo __d('report_manager','Count:',true); ?></i> <?php echo $counter;?></td>
                         </tr>
                     <?php } ?>
                 </table>
