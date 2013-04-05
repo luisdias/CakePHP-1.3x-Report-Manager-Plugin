@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-25 15:07-0000\n"
-"PO-Revision-Date: 2013-03-25 15:08-0000\n"
+"POT-Creation-Date: 2013-04-05 15:36-0000\n"
+"PO-Revision-Date: 2013-04-05 15:36-0000\n"
 "Last-Translator: LD <ld@internet.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -148,7 +148,12 @@ msgid "Load"
 msgstr "Carregar"
 
 #: views/reports/report_display.ctp:95
-#: views/reports/report_display_one_to_many.ctp:166
+#: views/reports/report_display_one_to_many.ctp:158
+msgid "Count:"
+msgstr "Total:"
+
+#: views/reports/report_display.ctp:97
+#: views/reports/report_display_one_to_many.ctp:170
 msgid "Report Created"
 msgstr "Relatório criado"
 
