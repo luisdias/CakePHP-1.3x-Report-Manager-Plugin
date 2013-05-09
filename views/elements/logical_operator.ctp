@@ -9,7 +9,7 @@
             );
             echo '<tr>';         
             echo '<td>';
-            echo $this->Form->input('Logical',array('type'=>'select','options'=>$logicalOptions,'label'=>false));            
+            echo $this->Form->input('Report.Logical',array('type'=>'select','options'=>$logicalOptions,'label'=>false));            
             echo '</td>';             
             echo '</tr>';
         ?>

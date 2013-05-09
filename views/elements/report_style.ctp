@@ -17,19 +17,19 @@
         
             echo '<tr>';
             echo '<td>';
-            echo $this->Form->input('ReportName',array('size'=>'80','maxlength'=>'80','label'=>__d('report_manager','ReportName',true)));            
+            echo $this->Form->input('Report.ReportName',array('size'=>'80','maxlength'=>'80','label'=>__d('report_manager','ReportName',true)));            
             echo '</td>';
             echo '</tr>';
             
             echo '<tr>';
             echo '<td>';
-            echo $this->Form->input('Style',array('type'=>'select','options'=>$styleOptions,'label'=>__d('report_manager','Style',true)));            
+            echo $this->Form->input('Report.Style',array('type'=>'select','options'=>$styleOptions,'label'=>__d('report_manager','Style',true)));            
             echo '</td>';             
             echo '</tr>';
 
             echo '<tr>';
             echo '<td>';
-            echo $this->Form->input('Output',array('type'=>'select','options'=>$outputOptions,'label'=>__d('report_manager','Output',true)));            
+            echo $this->Form->input('Report.Output',array('type'=>'select','options'=>$outputOptions,'label'=>__d('report_manager','Output',true)));            
             echo '</td>';             
             echo '</tr>';
             
@@ -40,7 +40,7 @@
                 $showRecordCounter = $this->data['Report']['ShowRecordCounter'];
             else
                 $showRecordCounter = true;
-            echo $this->Form->checkbox('ShowRecordCounter',array('hiddenField' => true,'checked'=>$showRecordCounter));                     
+            echo $this->Form->checkbox('Report.ShowRecordCounter',array('hiddenField' => true,'checked'=>$showRecordCounter));                     
             echo '</td>';             
             echo '</tr>';            
             
@@ -52,7 +52,7 @@
                     $showNoRelated = $this->data['Report']['ShowNoRelated'];
                 else
                     $showNoRelated = false;
-                echo $this->Form->checkbox('ShowNoRelated',array('hiddenField' => true,'checked'=>$showNoRelated));
+                echo $this->Form->checkbox('Report.ShowNoRelated',array('hiddenField' => true,'checked'=>$showNoRelated));
                 echo '</td>';             
                 echo '</tr>';
             }
@@ -64,7 +64,7 @@
                 $saveReport = $this->data['Report']['SaveReport'];
             else
                 $saveReport = false;            
-            echo $this->Form->checkbox('SaveReport',array('hiddenField' => true,'checked'=>$saveReport));                     
+            echo $this->Form->checkbox('Report.SaveReport',array('hiddenField' => true,'checked'=>$saveReport));                     
             echo '</td>';             
             echo '</tr>';            
       

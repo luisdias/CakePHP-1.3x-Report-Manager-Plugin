@@ -151,9 +151,9 @@ class ReportsController extends AppController {
         $content.= var_export($this->data,1);
         $content.='; ?>'; 
         
-        if ($this->data[$modelClass]['ReportName'] != '') {
-            $reportName = str_replace('.', '_', $this->data[$modelClass]['ReportName']);
-            $reportName = str_replace(' ', '_', $this->data[$modelClass]['ReportName']);
+        if ($this->data['Report']['ReportName'] != '') {
+            $reportName = str_replace('.', '_', $this->data['Report']['ReportName']);
+            $reportName = str_replace(' ', '_', $this->data['Report']['ReportName']);
         } else {
             $reportName = date('Ymd_His');
         }
@@ -292,7 +292,7 @@ class ReportsController extends AppController {
         } else {
             $this->loadModel($modelClass);
             $associatedModels = $this->{$modelClass}->getAssociated();
-            $oneToManyOption = $this->data[$modelClass]['OneToManyOption'];
+            $oneToManyOption = $this->data['Report']['OneToManyOption'];
             
             $fieldsList = array();
             $fieldsPosition = array();
@@ -399,7 +399,7 @@ class ReportsController extends AppController {
                 $oneToManyTableWidth = $this->getTableWidth($oneToManyTableColumnWidth);                
                 asort($oneToManyFieldsPosition);
                 $oneToManyFieldsList = array_keys($oneToManyFieldsPosition);
-                $showNoRelated = $this->data[$modelClass]['ShowNoRelated'];
+                $showNoRelated = $this->data['Report']['ShowNoRelated'];
                 $recursive = 1;
             }
             
@@ -419,11 +419,11 @@ class ReportsController extends AppController {
             $this->set('fieldsType',$fieldsType);
             $this->set('fieldsLength',$fieldsLength);
             $this->set('reportData',$reportData);
-            $this->set('reportName',$this->data[$modelClass]['ReportName']);
-            $this->set('reportStyle',$this->data[$modelClass]['Style']);
-            $this->set('showRecordCounter',$this->data[$modelClass]['ShowRecordCounter']);
+            $this->set('reportName',$this->data['Report']['ReportName']);
+            $this->set('reportStyle',$this->data['Report']['Style']);
+            $this->set('showRecordCounter',$this->data['Report']['ShowRecordCounter']);
 
-            if ( $this->data[$modelClass]['Output'] == 'html') {
+            if ( $this->data['Report']['Output'] == 'html') {
                 if ($oneToManyOption == '')
                     $this->render('report_display');
                 else {
@@ -446,7 +446,7 @@ class ReportsController extends AppController {
                         $oneToManyFieldsType, 
                         $showNoRelated );
             }
-            if ($this->data[$modelClass]['SaveReport'])
+            if ($this->data['Report']['SaveReport'])
                 $this->saveReport($modelClass,$oneToManyOption);
         }
     }
